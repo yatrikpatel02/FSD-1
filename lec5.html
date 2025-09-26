@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <filedset>
+        <legend>User Details</legend>
+        <label for="a1">Name</label>
+        <input
+          type="text"
+          id="a1"
+          name="uname"
+          placeholder="Enter your name"
+          minlength="2"
+          maxlength="20"
+          autofocus
+          autopcomplete="ON"
+        />
+        <br />
+        <br />
+        <label for="a2">Password</label>
+        <input
+          type="password"
+          id="a2"
+          name="pass"
+          placeholder="Enter password"
+          minlength="8"
+          maxlength="20"
+        />
+        <br />
+        <br />
+        <label for="a3">Email</label>
+        <input
+          type="text"
+          id="a3"
+          name="email"
+          placeholder="Enter email"
+          minlength="8"
+          maxlength="20"
+        />
+        <br />
+        <br />
+        <label for="a4">Phone</label>
+        <input
+          type="text"
+          id="a4"
+          name="tel"
+          placeholder="Enter phone number"
+          minlength="10"
+          maxlength="10"
+        />
+        <br />
+        <br />
+        <label for="Gender">Gender</label>
+        <input type="radio" name="gen" value="male" checked />male
+        <input type="radio" name="gen" value="female" />female
+        <br />
+        <br />
+        Hobbies:
+        <input type="checkbox" name="hobb" value="music" />music
+        <br />
+        <br />
+        <input type="checkbox" name="hobb" value="reading" />reading
+        <br />
+        <br />
+      </filedset>
+      <fieldset>
+        <legend>Additional Data</legend>
+        Date of Birth :
+        <input type="date" name="DOB" min="2025-09-07" max="2026-09-07" />
+        <br />
+        <br />
+        Age :
+        <input type="number" name="age" min="0" max="110" step="10" />
+        <br />
+        <br />
+        Favourite color:
+        <input type="color" name="favourite color" value="#0000ff" />
+        <br />
+        <br />
+        preferred sports:
+        <input list="sports" name="psports" placeholder="select sports" />
+        <datalist id="sports">
+          <option value="cricket">cricket</option>
+          <option value="hockey">hockey</option>
+          <option value="football">football</option>
+        </datalist>
+        <br />
+        <br />
+        Branch:
+        <select name="branch">
+          <option value="select" selected hidden>select branch</option>
+          +
+          <optgroup label="computer">
+            <option value="CE">CE</option>
+            <option value="IT">IT</option>
+          </optgroup>
+          <optgroup label="other">
+            <option value="EC">EC</option>
+            <option value="CIVIL">CIVIL</option>
+          </optgroup>
+        </select>
+        <br />
+        <br />
+        Remarks:
+        <textarea
+          name="msg"
+          rows="5"
+          cols="20"
+          placeholder="Enter Your msg...."
+        ></textarea>
+        <br />
+        <br />
+        Range: <input type="range" min="2" max="20" step="5" />
+        <br />
+        <br />
+        file: <input type="file" name="resume" accept=".pdf,.doc" multiple />
+      </fieldset>
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
